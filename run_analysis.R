@@ -20,7 +20,7 @@ strURL <-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20H
 strFile <-"dataset.zip"
 strPathFile <-file.path(dataDir, strFile, fsep = "/")
 if(!file.exists(strPathFile)) {
-        download.file(url = strURL, destfile = strPathFile, method = "curl", mode = "wb")
+        download.file(url = strURL, destfile = strPathFile, method = "auto", mode = "wb")
 }
 
 # unzip the file to the data directory
